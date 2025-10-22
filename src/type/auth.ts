@@ -4,7 +4,7 @@ export interface User {
   roles?: string[]
 }
 
-export interface LoginPayload {
+export interface LoginRequest {
   username: string
   password: string
 }

@@ -1,11 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import headerNav from './components/headerNav.vue'
+</script>
 
-<template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+
+  <template>
+  <div class="common-layout">
+    <el-container>
+      <el-header>
+        <headerNav/>
+      </el-header>
+      <el-container>
+        <el-aside width="200px">Aside</el-aside>
+        <el-main><router-view/></el-main>
+      </el-container>
+    </el-container>
+  </div>
 </template>
+
+
 
 <style scoped></style>
