@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-22.md",
+                "file": "2025-10-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-22"
+              "title": "2025-10-23"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "4a91483fd54bb592",
@@ -173,7 +174,9 @@
   "active": "fecd2abd70f257db",
   "lastOpenFiles": [
     "2025-10-21.md",
+    "2025-10-23.md",
     "2025-10-22.md",
+    "计划.md",
     "learning-plan.zh-CN.md",
     "未命名.canvas",
     "未命名 1.base",

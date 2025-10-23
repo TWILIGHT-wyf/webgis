@@ -44,12 +44,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import type { FormInstance } from 'element-plus'
-
+import { useAuthStore } from '@/stores/auth'
 interface LoginForm {
   username: string
   password: string
 }
 
+const auth = useAuthStore()
 const formRef = ref<FormInstance>()
 const form = ref<LoginForm>({
   username: '',
@@ -66,8 +67,7 @@ const onSubmit = async () => {
   if (!formRef.value) return
   await formRef.value.validate((valid) => {
     if (valid) {
-      // 逻辑由你来写
-      console.log('表单验证通过')
+      auth.login(form.value)
     }
   })
 }

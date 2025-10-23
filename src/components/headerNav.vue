@@ -1,6 +1,5 @@
 <template>
-  <el-menu :default-active="activeIndex" mode="horizontal" @select="menuSelect" router="true">
-      <el-menu-item index="/login">登录</el-menu-item>
+  <el-menu :default-active="activeIndex" mode="horizontal" router="true" :key="activeIndex">
       <el-menu-item index="/dashboard">仪表盘</el-menu-item>
       <el-menu-item index="/map">地图</el-menu-item>
       <el-menu-item index="/workorders">设施管理</el-menu-item>
@@ -10,6 +9,13 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const activeIndex = computed(() => route.path)
+
+
 
 </script>
 
